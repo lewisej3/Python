@@ -1,0 +1,19 @@
+Stuff to set up crontab
+env EDITOR=nano crontab -e
+* * * * * cd ~/Dropbox/Code/Python && ./bbc.py   
+add this bit to write to a log file
+>> script_output.log 2>&1
+control+O control+x
+
+so you can run the application without typing python test.py
+#!/usr/bin/python3
+and
+chmod +x test.py 
+in order to change permissions so terminal can run the file.
+
+#!/usr/bin/env python3
+and label file .command to turn it into a file that can just be clicked on in finder.
+
+
+
+
